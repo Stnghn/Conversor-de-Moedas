@@ -1,16 +1,15 @@
 function converter() {
 
-var moeda = Number(document.getElementById('valor').value)
+    var moeda = Number(document.getElementById('valor').value)
 
-var opcoes = document.getElementById('moedas').value
+    var opcoes = document.getElementById('moedas').value
 
-var resultado = document.getElementById('resultado')
+    var resultado = document.getElementById('resultado')
 
-console.log(moeda)
+    console.log(moeda)
 
-console.log(opcoes)
+    console.log(opcoes)
     
-
     switch (opcoes) {
         case "1":
             moeda = moeda * 5.37
@@ -50,8 +49,7 @@ console.log(opcoes)
 
         case "10":
             moeda = moeda * 0.76
-            break;
-            
+            break;      
 
         default:
             break;
@@ -60,5 +58,3 @@ console.log(opcoes)
     resultado.innerHTML = `${moeda} reais`
 
 }
-
-
